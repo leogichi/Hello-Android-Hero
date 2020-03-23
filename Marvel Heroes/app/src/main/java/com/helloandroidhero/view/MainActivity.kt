@@ -1,7 +1,8 @@
-package com.helloandroidhero
+package com.helloandroidhero.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.helloandroidhero.R
 
 class MainActivity : AppCompatActivity() {
 
