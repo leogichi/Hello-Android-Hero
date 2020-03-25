@@ -10,11 +10,11 @@ import dagger.Provides
 class HeroListModule {
     @Provides
     fun provideHeroListPresenter(iModel: IHeroListMvp.iModel): IHeroListMvp.iPresenter {
-        return HeroListIPresenter()
+        return HeroListIPresenter(iModel)
     }
 
     @Provides
-    fun provideHeroListModel(): IHeroListMvp.iModel {
+    fun provideHeroListModel():IHeroListMvp.iModel {
         return HeroListIModel()
     }
 }

@@ -11,7 +11,9 @@ class App : Application(),IMVPComponent
     override fun onCreate() {
         super.onCreate()
 
-        iappComponent = DaggerIApplicationComponent.builder().applicationModule(ApplicationModule(this)).build()
+        iappComponent = DaggerIApplicationComponent.builder().applicationModule(ApplicationModule
+            (this)).build()
+
     }
 
     override fun getComponent(): IApplicationComponent = iappComponent
